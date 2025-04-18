@@ -1,0 +1,56 @@
+CREATE TABLE eleve(
+   id_eleve INT AUTO_INCREMENT PRIMARY KEY,
+   date_de_naissance DATE,
+   parent VARCHAR(255),
+   adresse VARCHAR(255)
+);
+
+CREATE TABLE maison(
+   id_maison INT AUTO_INCREMENT PRIMARY KEY,
+   nom VARCHAR(50),
+   photo VARCHAR(255),
+   description TEXT
+);
+
+CREATE TABLE article(
+   id_article INT AUTO_INCREMENT PRIMARY KEY,
+   nom VARCHAR(50),
+   photo VARCHAR(255),
+   prix FLOAT
+);
+
+CREATE TABLE rentree(
+   id_rentree INT AUTO_INCREMENT PRIMARY KEY,
+   date_rentree DATE,
+   info TEXT
+);
+
+CREATE TABLE vacance(
+   id_vaccance INT AUTO_INCREMENT PRIMARY KEY,
+   info TEXT
+);
+
+CREATE TABLE buse(
+   id_buse INT AUTO_INCREMENT,
+   Info TEXT
+);
+
+CREATE TABLE Concour(
+   id_concour INT AUTO_INCREMENT PRIMARY KEY,
+   nom VARCHAR(255),
+   dateDebut DATE,
+   dateFin DATE,
+   info TEXT
+);
+
+CREATE TABLE bdc(
+   id_bdc INT AUTO_INCREMENT PRIMARY KEY,
+   nom VARCHAR(255),
+   pdf VARCHAR(255)
+);
+
+CREATE TABLE Notation(
+   id_notes INT AUTO_INCREMENT PRIMARY KEY,
+   commentaire TEXT,
+   note DECIMAL(15,2)
+);
